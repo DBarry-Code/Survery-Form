@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to answer our question</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter your Email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">"Age"
+                    <span class="clue">(optional)</span>
+                </label>
+                <input class="form-control" type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Wich option best describes your current job situation </p>
+                <select class="form-control" name="role" id="dropdown" required>
+                    <option disabled selected value>Select current job role</option>
+                    <option value="student">Student</option>
+                    <option value="fulljob">Full Time Job 40h</option>
+                    <option value="halfjob">Half Time Job 20h</option>
+                    <option value="minijob">Mini Job 450€</option>
+                    <option value="nojob">Unemployment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommenf freeCodeCamp to friend?</p>
+                <label>
+                    <input class="input-radio" value="definitely" name="user-recommend" type="radio">Definitely
+                </label>
+                <label>
+                    <input class="input-radio" value="maybe" name="user-recommend" type="radio">Maybe
+                </label>
+                <label>
+                    <input class="input-radio" value="dontno" name="user-recommend" type="radio">I don`t no
+                </label>
+            </div>
+            <div class="form-group">
+                <p> Whats your self study goal?</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="font-end" class="input-checkbox">Front-End
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="back-end" class="input-checkbox">Back-End
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="full-stack" class="input-checkbox">Full Stack
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="data-since" class="input-checkbox">Data Science
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any coments or suggestions?</p>
+                <textarea name="comment" id="comments" class="input-textarea"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button class="submit-button" id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
